@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to Server2
         run: |
-         ssh itential@182.94.235.62 << 'EOF'
+         ssh -t itential@182.94.235.62 << 'EOF'
            if [ ! -d "/home/itential/github/.git" ]; then
              git clone git@github.com:anupathaniagenpact/demo-01.git /home/itential/github/;
            else

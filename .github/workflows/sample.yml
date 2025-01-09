@@ -16,7 +16,7 @@ jobs:
 
 
       - name: Create directory github
-        run: mkdir /home/itential/github1
+        run: echo "hello"
 
       - name: Deploy to Server2
         run: |

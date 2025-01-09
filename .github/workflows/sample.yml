@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to Server2
         run: |
-         ssh user@server2.example.com '
+         ssh itential@182.94.235.62 '
            if [ ! -d "/home/itential/github/.git" ]; then
              git clone git@github.com:anupathaniagenpact/demo-01.git /home/itential/github/;
            else

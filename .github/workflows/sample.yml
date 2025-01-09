@@ -1,4 +1,4 @@
-name: sample-testing
+name: 
 
 on:
   push:
@@ -17,3 +17,13 @@ jobs:
 
       - name: Create directory github
         run: mkdir github
+
+      - name: Deploy to Server2
+        run: |
+         ssh user@server2.example.com '
+           if [ ! -d "/home/itential/github/.git" ]; then
+             git clone git@github.com:anupathaniagenpact/demo-01.git /home/itential/github/;
+           else
+             cd /home/itential/github && git pull origin main;
+           fi
+        

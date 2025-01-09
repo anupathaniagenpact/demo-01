@@ -16,7 +16,7 @@ jobs:
 
 
       - name: Create directory github
-        run: mkdir /home/itential/github
+        run: mkdir /home/itential/github1
 
       - name: Deploy to Server2
         run: |

@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          repository: https://github.com/anupathaniagenpact/demo-01.git
+          repository: anupathaniagenpact/demo-01.git
           token: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Create directory github

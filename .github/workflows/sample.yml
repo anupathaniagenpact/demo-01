@@ -13,23 +13,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT_TOKEN }}     
-
-      - name: Set up SSH key
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.IAG10_ssh }}
-
+        
       - name: Create directory github
         run: echo "hello1"
 
-      - name: Deploy to Server2
-        run: |
-         ssh -t itential@182.94.235.62 << 'EOF'
-           if [ ! -d "/home/itential/github/.git" ]; then
-             git clone git@github.com:anupathaniagenpact/demo-01.git /home/itential/github/;
-           else
-             cd /home/itential/github && git pull origin main;
-           fi
+      
         

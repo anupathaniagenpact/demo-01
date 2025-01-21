@@ -13,10 +13,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          repository: anupathaniagenpact/demo-01.git
-          token: ${{ secrets.GITHUB_TOKEN }}
-          ref: main
+
           
 
       - name: Create directory github

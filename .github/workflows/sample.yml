@@ -20,7 +20,7 @@ jobs:
           ssh-private-key: ${{ secrets.IAG10_ssh }}
 
       - name: Create directory github
-        run: echo "hello"
+        run: echo "hello1"
 
       - name: Deploy to Server2
         run: |

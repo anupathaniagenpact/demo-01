@@ -8,7 +8,7 @@ on:
 
 jobs:
   build: 
-    runs-on: [ self-hosted , IAG10 ]
+    runs-on: [ IAG10 ]
 
     steps:
       - name: Checkout code 

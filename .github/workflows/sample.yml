@@ -3,7 +3,7 @@ name: CI sample
 on:
   push:
     branches:
-      - main 
+      - main
 
 
 jobs:

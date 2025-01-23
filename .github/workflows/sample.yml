@@ -14,6 +14,12 @@ jobs:
       - name: Checkout code 
         uses: actions/checkout@v2
 
+      - name: Run ansible script
+        shell: bash 
+        run: |
+          cd /home/itential/ansible-playbooks/
+          ansible-playbook -i inventory playbook.yml
+
           
 
     
